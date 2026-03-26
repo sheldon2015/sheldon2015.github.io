@@ -1,3 +1,6 @@
 title: 我的个人网站
 description: 主页 + 博客
 theme: minima
+# 导航栏
+header_pages:
+  - blog.html
