@@ -1,6 +1,5 @@
 title: 首页
 description: 博客
-theme: minima
-
+remote_theme: fongandrew/hydeout
 header_pages:
   - blog.html
