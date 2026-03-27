@@ -6,13 +6,14 @@ title: 博客
 <h1>博客</h1>
 
 <ul class="post-list">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <li class="post-item">
       <a href="{{ post.url }}">{{ post.title }}</a>
       <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
     </li>
   {% endfor %}
 </ul>
+
 <!-- 分页导航 -->
 <div class="pagination">
   {% if paginator.previous_page %}
