@@ -5,5 +5,5 @@ date: 2024-03-01
 ---
 
 <div class="card">
-这是我的第一篇科技蓝灰风文章。
+这是我的第一篇 Claude Code 风文章。
 </div>
