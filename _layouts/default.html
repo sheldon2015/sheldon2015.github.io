@@ -6,12 +6,20 @@
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-<nav class="sheldon-nav">
-  <a href="/">首页</a>
-  <a href="/blog.html">博客</a>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Portfolio</a>
+    <div class="nav-links">
+      <a href="/">首页</a>
+      <a href="/blog.html">博客</a>
+    </div>
+  </div>
 </nav>
-<main class="sheldon-container">
+
+<main class="container">
   {{ content }}
 </main>
+
 </body>
 </html>
