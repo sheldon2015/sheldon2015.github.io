@@ -11,4 +11,3 @@ future: true
 
 plugins:
   - jekyll-paginate
-  - jemoji
