@@ -3,11 +3,6 @@ layout: default
 title: 博客
 ---
 <h1>博客11</h1>
-{{ site.paginator | inspect  }}
-{{ paginator | inspect  }}
-{{ site.plugins | inspect  }}
-{{ plugins | inspect  }}
-{{ site.time }}
 <ul class="post-list">
   {% for post in site.posts %}
     <li class="post-item">
@@ -17,4 +12,15 @@ title: 博客
   {% endfor %}
 </ul>
 <!-- 分页导航 -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}">上一页</a>
+  {% endif %}
+
+  <span>第 {{ paginator.page }} 页 / 共 {{ paginator.total_pages }} 页</span>
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}">下一页</a>
+  {% endif %}
+</div>
 
